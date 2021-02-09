@@ -2,7 +2,11 @@
 
 require_relative '../lib/password.rb'
 
-require 'pry'
+begin
+  require 'pry'
+rescue LoadError
+end
+
 
 # Generate a password
 # bin/password --generate --no-symbol --length=10
